@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----title------------>
+    <title>Products - RedStore</title>
+
+
+     <!---stylesheet-->
+     <link rel="stylesheet" href="./style.css">
+
+     <!---google font link-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+ 
+     <!-----font awesome  cdn /content delivery network -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!------header--------->
+    
+    <div class="header header-one">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="index.html"><img src="ll.jpg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuIcons">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+                <img src="menu.png" class="menu-icon" onclick="Menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    
+
+   <!-----product details-->
+   <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="p.jpg" width="100%" id="ProductImg">
+
+                <div class="small-product-row">
+                    <div class="small-product-col">
+                        <img src="p.jpg" class="small-img" width="100%">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-2">
+                <p>Home / بريل غسيل الاطباق</p>
+                <h1>بريل غسيل الاطباق</h1>
+                <h4>$50.00</h4>
+                
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Card</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt magni quas illo minus ut dolores.
+                </p>
+            </div>
+        </div>
+   </div>
+
+   
+
+    <!--------footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App </h3>
+                    <p>Download App for Android and ios mobil phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" >
+                        <img src="app-store.png">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="logo-white.png" >
+                    <p>Our Purpose Is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2023</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let MenuIcons = document.getElementById("MenuIcons");
+        MenuIcons.style.maxHeight = "0px";
+
+
+        function Menutoggle(){
+            if( MenuIcons.style.maxHeight == "0px"){
+                MenuIcons.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuIcons.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!----login form js toggle script-->
+    <script>
+        var loginform = document.getElementById("loginform");
+        var registerform = document.getElementById("registerform");
+        var indicator = document.getElementById("indicator");
+
+
+        function register(){
+            loginform.style.transform = "translateX(0px)";
+            registerform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+
+        function login(){
+            loginform.style.transform = "translateX(300px)";
+            registerform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
